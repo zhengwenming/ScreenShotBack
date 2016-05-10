@@ -1,0 +1,50 @@
+//
+//  ScreenShotBack.pch
+//  ScreenShotBack
+//
+//  Created by 郑文明 on 16/5/10.
+//  Copyright © 2016年 郑文明. All rights reserved.
+//
+
+#ifndef ScreenShotBack_pch
+#define ScreenShotBack_pch
+
+/**
+ *  kUseFullScreenGesture 和  kUseScreenShotGesture两个宏，决定项目用哪种返回效果
+ 
+ *  kUseFullScreenGesture为全屏返回效果   0为关闭，1为打开
+    kUseScreenShotGesture为截图返回效果   0为关闭，1为打开
+ 
+ *  kUseFullScreenGesture全屏返回优先级大，因为他是category，所以kUseFullScreenGesture打开后，截图返回实效
+ *
+ */
+
+#pragma mark -------------------全屏返回手势
+#define kUseFullScreenGesture 0
+
+
+
+#pragma mark -------------------截图返回手势
+#define kUseScreenShotGesture 1
+
+
+
+
+
+
+
+#import "UINavigationController+FDFullscreenPopGesture.h"
+
+
+//RGB
+#define RGBA(r, g, b, a)    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r, g, b)     RGBA(r, g, b, 1.0f)
+
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+
+#import  "UIView+Additions.h"
+
+#endif /* ScreenShotBack_pch */

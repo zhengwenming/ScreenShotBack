@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70069F3C1CE1A51A00992EC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F3B1CE1A51A00992EC5 /* main.m */; };
+		70069F3F1CE1A51A00992EC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F3E1CE1A51A00992EC5 /* AppDelegate.m */; };
+		70069F451CE1A51B00992EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70069F431CE1A51B00992EC5 /* Main.storyboard */; };
+		70069F471CE1A51B00992EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70069F461CE1A51B00992EC5 /* Assets.xcassets */; };
+		70069F4A1CE1A51B00992EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70069F481CE1A51B00992EC5 /* LaunchScreen.storyboard */; };
+		70069F551CE1A6D300992EC5 /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F541CE1A6D300992EC5 /* ScreenShotView.m */; };
+		70069F5E1CE1AB4F00992EC5 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F5D1CE1AB4F00992EC5 /* TabBarViewController.m */; };
+		70069F681CE1AD0300992EC5 /* OnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F671CE1AD0300992EC5 /* OnlineViewController.m */; };
+		70069F711CE1AD6300992EC5 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F701CE1AD6300992EC5 /* MineViewController.m */; };
+		70069F771CE1AD9F00992EC5 /* ColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F761CE1AD9F00992EC5 /* ColumnViewController.m */; };
+		70069F7B1CE1B2AC00992EC5 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F7A1CE1B2AC00992EC5 /* UIView+Additions.m */; };
+		70069F811CE1C02B00992EC5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F801CE1C02B00992EC5 /* BaseViewController.m */; };
+		70069F8D1CE1C8FE00992EC5 /* PanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F8C1CE1C8FE00992EC5 /* PanGestureViewController.m */; };
+		70069F901CE1C96400992EC5 /* NonPanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F8F1CE1C96400992EC5 /* NonPanGestureViewController.m */; };
+		70069F991CE1D04D00992EC5 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F981CE1D04D00992EC5 /* BaseNavigationController.m */; };
+		70069FA41CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069FA31CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		70069FAD1CE1F18900992EC5 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069FAB1CE1F18900992EC5 /* RecommendViewController.m */; };
+		70069FAE1CE1F18900992EC5 /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */; };
+		70069FB01CE1F73600992EC5 /* ScreenShotBack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70069FAF1CE1F73600992EC5 /* ScreenShotBack.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		70069F371CE1A51A00992EC5 /* ScreenShotBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenShotBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70069F3B1CE1A51A00992EC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70069F3D1CE1A51A00992EC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70069F3E1CE1A51A00992EC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70069F441CE1A51B00992EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70069F461CE1A51B00992EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70069F491CE1A51B00992EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70069F4B1CE1A51C00992EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70069F511CE1A59900992EC5 /* ScreenShotBack.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenShotBack.pch; sourceTree = "<group>"; };
+		70069F531CE1A6D300992EC5 /* ScreenShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotView.h; sourceTree = "<group>"; };
+		70069F541CE1A6D300992EC5 /* ScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotView.m; sourceTree = "<group>"; };
+		70069F5C1CE1AB4F00992EC5 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		70069F5D1CE1AB4F00992EC5 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		70069F661CE1AD0300992EC5 /* OnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineViewController.h; sourceTree = "<group>"; };
+		70069F671CE1AD0300992EC5 /* OnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineViewController.m; sourceTree = "<group>"; };
+		70069F6F1CE1AD6300992EC5 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		70069F701CE1AD6300992EC5 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		70069F751CE1AD9F00992EC5 /* ColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnViewController.h; sourceTree = "<group>"; };
+		70069F761CE1AD9F00992EC5 /* ColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnViewController.m; sourceTree = "<group>"; };
+		70069F791CE1B2AC00992EC5 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		70069F7A1CE1B2AC00992EC5 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		70069F7F1CE1C02B00992EC5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		70069F801CE1C02B00992EC5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		70069F8B1CE1C8FE00992EC5 /* PanGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureViewController.h; sourceTree = "<group>"; };
+		70069F8C1CE1C8FE00992EC5 /* PanGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanGestureViewController.m; sourceTree = "<group>"; };
+		70069F8E1CE1C96400992EC5 /* NonPanGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonPanGestureViewController.h; sourceTree = "<group>"; };
+		70069F8F1CE1C96400992EC5 /* NonPanGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonPanGestureViewController.m; sourceTree = "<group>"; };
+		70069F971CE1D04D00992EC5 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		70069F981CE1D04D00992EC5 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		70069FA21CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		70069FA31CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		70069FAA1CE1F18900992EC5 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		70069FAB1CE1F18900992EC5 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
+		70069FAF1CE1F73600992EC5 /* ScreenShotBack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenShotBack.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70069F341CE1A51A00992EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70069F2E1CE1A51900992EC5 = {
+			isa = PBXGroup;
+			children = (
+				70069F391CE1A51A00992EC5 /* ScreenShotBack */,
+				70069F381CE1A51A00992EC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70069F381CE1A51A00992EC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70069F371CE1A51A00992EC5 /* ScreenShotBack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70069F391CE1A51A00992EC5 /* ScreenShotBack */ = {
+			isa = PBXGroup;
+			children = (
+				70069F3D1CE1A51A00992EC5 /* AppDelegate.h */,
+				70069F3E1CE1A51A00992EC5 /* AppDelegate.m */,
+				70069F5C1CE1AB4F00992EC5 /* TabBarViewController.h */,
+				70069F5D1CE1AB4F00992EC5 /* TabBarViewController.m */,
+				70069F8B1CE1C8FE00992EC5 /* PanGestureViewController.h */,
+				70069F8C1CE1C8FE00992EC5 /* PanGestureViewController.m */,
+				70069F8E1CE1C96400992EC5 /* NonPanGestureViewController.h */,
+				70069F8F1CE1C96400992EC5 /* NonPanGestureViewController.m */,
+				70069F781CE1B2A000992EC5 /* Category */,
+				70069F5F1CE1ACB300992EC5 /* ViewController */,
+				70069F521CE1A6B600992EC5 /* ScreenShot */,
+				70069F431CE1A51B00992EC5 /* Main.storyboard */,
+				70069F461CE1A51B00992EC5 /* Assets.xcassets */,
+				70069F481CE1A51B00992EC5 /* LaunchScreen.storyboard */,
+				70069F4B1CE1A51C00992EC5 /* Info.plist */,
+				70069F3A1CE1A51A00992EC5 /* Supporting Files */,
+			);
+			path = ScreenShotBack;
+			sourceTree = "<group>";
+		};
+		70069F3A1CE1A51A00992EC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70069F3B1CE1A51A00992EC5 /* main.m */,
+				70069FAF1CE1F73600992EC5 /* ScreenShotBack.gif */,
+				70069F511CE1A59900992EC5 /* ScreenShotBack.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70069F521CE1A6B600992EC5 /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				70069F531CE1A6D300992EC5 /* ScreenShotView.h */,
+				70069F541CE1A6D300992EC5 /* ScreenShotView.m */,
+				70069F971CE1D04D00992EC5 /* BaseNavigationController.h */,
+				70069F981CE1D04D00992EC5 /* BaseNavigationController.m */,
+				70069F7F1CE1C02B00992EC5 /* BaseViewController.h */,
+				70069F801CE1C02B00992EC5 /* BaseViewController.m */,
+			);
+			path = ScreenShot;
+			sourceTree = "<group>";
+		};
+		70069F5F1CE1ACB300992EC5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70069FAA1CE1F18900992EC5 /* RecommendViewController.h */,
+				70069FAB1CE1F18900992EC5 /* RecommendViewController.m */,
+				70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */,
+				70069F751CE1AD9F00992EC5 /* ColumnViewController.h */,
+				70069F761CE1AD9F00992EC5 /* ColumnViewController.m */,
+				70069F661CE1AD0300992EC5 /* OnlineViewController.h */,
+				70069F671CE1AD0300992EC5 /* OnlineViewController.m */,
+				70069F6F1CE1AD6300992EC5 /* MineViewController.h */,
+				70069F701CE1AD6300992EC5 /* MineViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		70069F781CE1B2A000992EC5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				70069F791CE1B2AC00992EC5 /* UIView+Additions.h */,
+				70069F7A1CE1B2AC00992EC5 /* UIView+Additions.m */,
+				70069FA21CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.h */,
+				70069FA31CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70069F361CE1A51A00992EC5 /* ScreenShotBack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70069F4E1CE1A51C00992EC5 /* Build configuration list for PBXNativeTarget "ScreenShotBack" */;
+			buildPhases = (
+				70069F331CE1A51A00992EC5 /* Sources */,
+				70069F341CE1A51A00992EC5 /* Frameworks */,
+				70069F351CE1A51A00992EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenShotBack;
+			productName = ScreenShotBack;
+			productReference = 70069F371CE1A51A00992EC5 /* ScreenShotBack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70069F2F1CE1A51900992EC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "郑文明";
+				TargetAttributes = {
+					70069F361CE1A51A00992EC5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 70069F321CE1A51900992EC5 /* Build configuration list for PBXProject "ScreenShotBack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70069F2E1CE1A51900992EC5;
+			productRefGroup = 70069F381CE1A51A00992EC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70069F361CE1A51A00992EC5 /* ScreenShotBack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70069F351CE1A51A00992EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70069F4A1CE1A51B00992EC5 /* LaunchScreen.storyboard in Resources */,
+				70069FAE1CE1F18900992EC5 /* RecommendViewController.xib in Resources */,
+				70069FB01CE1F73600992EC5 /* ScreenShotBack.gif in Resources */,
+				70069F471CE1A51B00992EC5 /* Assets.xcassets in Resources */,
+				70069F451CE1A51B00992EC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70069F331CE1A51A00992EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70069F771CE1AD9F00992EC5 /* ColumnViewController.m in Sources */,
+				70069F8D1CE1C8FE00992EC5 /* PanGestureViewController.m in Sources */,
+				70069F551CE1A6D300992EC5 /* ScreenShotView.m in Sources */,
+				70069F5E1CE1AB4F00992EC5 /* TabBarViewController.m in Sources */,
+				70069F3F1CE1A51A00992EC5 /* AppDelegate.m in Sources */,
+				70069F3C1CE1A51A00992EC5 /* main.m in Sources */,
+				70069F711CE1AD6300992EC5 /* MineViewController.m in Sources */,
+				70069F811CE1C02B00992EC5 /* BaseViewController.m in Sources */,
+				70069F681CE1AD0300992EC5 /* OnlineViewController.m in Sources */,
+				70069F901CE1C96400992EC5 /* NonPanGestureViewController.m in Sources */,
+				70069FAD1CE1F18900992EC5 /* RecommendViewController.m in Sources */,
+				70069F7B1CE1B2AC00992EC5 /* UIView+Additions.m in Sources */,
+				70069FA41CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				70069F991CE1D04D00992EC5 /* BaseNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		70069F431CE1A51B00992EC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70069F441CE1A51B00992EC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70069F481CE1A51B00992EC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70069F491CE1A51B00992EC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70069F4C1CE1A51C00992EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		70069F4D1CE1A51C00992EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70069F4F1CE1A51C00992EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = ScreenShotBack/ScreenShotBack.pch;
+				INFOPLIST_FILE = ScreenShotBack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenming.ScreenShotBack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		70069F501CE1A51C00992EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = ScreenShotBack/ScreenShotBack.pch;
+				INFOPLIST_FILE = ScreenShotBack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenming.ScreenShotBack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70069F321CE1A51900992EC5 /* Build configuration list for PBXProject "ScreenShotBack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70069F4C1CE1A51C00992EC5 /* Debug */,
+				70069F4D1CE1A51C00992EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70069F4E1CE1A51C00992EC5 /* Build configuration list for PBXNativeTarget "ScreenShotBack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70069F4F1CE1A51C00992EC5 /* Debug */,
+				70069F501CE1A51C00992EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70069F2F1CE1A51900992EC5 /* Project object */;
+}
