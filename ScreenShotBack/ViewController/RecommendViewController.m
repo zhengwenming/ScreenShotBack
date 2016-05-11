@@ -9,29 +9,38 @@
 #import "RecommendViewController.h"
 #import "PanGestureViewController.h"
 #import "NonPanGestureViewController.h"
+#import "NonNavgationBarViewController.h"
 @interface RecommendViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
-    NSMutableArray *dataSource;
+    NSArray *dataSource;
 }
 @property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
 
 @implementation RecommendViewController
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    dataSource = [@[@"进入关闭（手势返回）的VC",@"进入打开（手势返回）的VC"] mutableCopy];
-    
+    dataSource = @[@{@"带导航栏测试":@[@"进入关闭（手势返回）的VC",@"进入打开（手势返回）的VC"]},
+                   @{@"隐藏导航栏测试":@[@"进入打开（手势返回）的VC"]}];
     _table.rowHeight = 60;
     _table.tableFooterView = [UIView new];
 }
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return dataSource.count;
 }
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    NSDictionary * dic = dataSource[section];
+    NSArray *valuesArray = dic.allValues.firstObject;
+    return valuesArray.count;
+}
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return @"测试";
+    NSDictionary * dic = dataSource[section];
+    return dic.allKeys.firstObject;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identifier = @"cell";
@@ -39,23 +48,30 @@
     if (cell==nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    cell.textLabel.text = dataSource[indexPath.row];
+    NSDictionary * dic = dataSource[indexPath.section];
+    NSArray *valuesArray = dic.allValues.firstObject;
+
+    cell.textLabel.text = valuesArray[indexPath.row];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    if (indexPath.row==0) {
-        
-        NonPanGestureViewController *nonPanGesVC = [[NonPanGestureViewController alloc]init];
+    if (indexPath.section==0) {
+        if (indexPath.row==0) {
+            
+            NonPanGestureViewController *nonPanGesVC = [[NonPanGestureViewController alloc]init];
 #if kUseFullScreenGesture
-        nonPanGesVC.fd_interactivePopDisabled = YES;
+            nonPanGesVC.fd_interactivePopDisabled = YES;
 #endif
-        
-        [self.navigationController pushViewController:nonPanGesVC animated:YES];
-    }else{
-        [self.navigationController pushViewController:[[PanGestureViewController alloc] init] animated:YES];
+            
+            [self.navigationController pushViewController:nonPanGesVC animated:YES];
+        }else{
+            [self.navigationController pushViewController:[[PanGestureViewController alloc] init] animated:YES];
+        }
+    }else if (indexPath.section==1){
+        [self.navigationController pushViewController:[[NonNavgationBarViewController alloc] init] animated:YES];
     }
+    
     
     
 }

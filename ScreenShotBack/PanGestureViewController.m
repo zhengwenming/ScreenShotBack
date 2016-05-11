@@ -28,7 +28,7 @@
     aLabel.userInteractionEnabled = YES;
     aLabel.center = self.view.center;
     [self.view addSubview:aLabel];
-    
+
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapTheLabel:)];
     [aLabel addGestureRecognizer:tap];

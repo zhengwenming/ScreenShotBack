@@ -1,31 +1,30 @@
 //
-//  NonPanGestureViewController.m
+//  NonNavgationBarViewController.m
 //  ScreenShotBack
 //
-//  Created by 郑文明 on 16/5/10.
+//  Created by 郑文明 on 16/5/11.
 //  Copyright © 2016年 郑文明. All rights reserved.
 //
 
-#import "NonPanGestureViewController.h"
+#import "NonNavgationBarViewController.h"
 
-@interface NonPanGestureViewController ()
-
-@end
-
-@implementation NonPanGestureViewController
+@implementation NonNavgationBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     /**
-     关闭手势返回
+     打开手势返回，
      */
-    self.navigationItem.title = @"关闭手势";
-    self.enablePanGesture = NO;
-
+    self.navigationItem.title = @"手势打开,导航隐藏";
+    self.enablePanGesture = YES;
+    self.navigationController.navigationBarHidden = YES;
+    
     
     UILabel *aLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 50)];
     aLabel.textAlignment = NSTextAlignmentCenter;
-    aLabel.text = @"返回手势已关闭";
+    aLabel.text = @"返回手势已打开，导航隐藏";
     aLabel.backgroundColor = [UIColor redColor];
     aLabel.userInteractionEnabled = YES;
     aLabel.center = self.view.center;
@@ -35,18 +34,19 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapTheLabel:)];
     [aLabel addGestureRecognizer:tap];
 }
-#pragma mark 
+#pragma mark
 #pragma mark tapTheLabel
 -(void)tapTheLabel:(UITapGestureRecognizer *)sender{
-    NonPanGestureViewController *nonPanGesVC = [[NonPanGestureViewController alloc]init];
+    NonNavgationBarViewController *nonNavBarVC = [[NonNavgationBarViewController alloc]init];
 #if kUseFullScreenGesture
-    nonPanGesVC.fd_interactivePopDisabled = YES;
+    nonNavBarVC.fd_interactivePopDisabled = YES;
 #endif
-    [self.navigationController pushViewController:nonPanGesVC animated:YES];
-
+    [self.navigationController pushViewController:nonNavBarVC animated:YES];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 @end
+
