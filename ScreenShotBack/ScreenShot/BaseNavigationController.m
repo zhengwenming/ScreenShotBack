@@ -137,7 +137,7 @@
         viewController.hidesBottomBarWhenPushed = YES;//隐藏二级页面的tabbar
     }
     AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(appdelegate.window.size.width, appdelegate.window.size.height), YES, 0);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(appdelegate.window.frame.size.width, appdelegate.window.frame.size.height), YES, 0);
     [appdelegate.window.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

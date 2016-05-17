@@ -17,15 +17,12 @@
 		70069F681CE1AD0300992EC5 /* OnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F671CE1AD0300992EC5 /* OnlineViewController.m */; };
 		70069F711CE1AD6300992EC5 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F701CE1AD6300992EC5 /* MineViewController.m */; };
 		70069F771CE1AD9F00992EC5 /* ColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F761CE1AD9F00992EC5 /* ColumnViewController.m */; };
-		70069F7B1CE1B2AC00992EC5 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F7A1CE1B2AC00992EC5 /* UIView+Additions.m */; };
 		70069F811CE1C02B00992EC5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F801CE1C02B00992EC5 /* BaseViewController.m */; };
 		70069F8D1CE1C8FE00992EC5 /* PanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F8C1CE1C8FE00992EC5 /* PanGestureViewController.m */; };
 		70069F901CE1C96400992EC5 /* NonPanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F8F1CE1C96400992EC5 /* NonPanGestureViewController.m */; };
 		70069F991CE1D04D00992EC5 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F981CE1D04D00992EC5 /* BaseNavigationController.m */; };
-		70069FA41CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069FA31CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		70069FAD1CE1F18900992EC5 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069FAB1CE1F18900992EC5 /* RecommendViewController.m */; };
 		70069FAE1CE1F18900992EC5 /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */; };
-		70069FB01CE1F73600992EC5 /* ScreenShotBack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70069FAF1CE1F73600992EC5 /* ScreenShotBack.gif */; };
 		7078A0761CE2C12B0031AC4A /* NonNavgationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7078A0751CE2C12B0031AC4A /* NonNavgationBarViewController.m */; };
 		7078A0781CE2C8070031AC4A /* ScreenShotPop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */; };
 /* End PBXBuildFile section */
@@ -50,8 +47,6 @@
 		70069F701CE1AD6300992EC5 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		70069F751CE1AD9F00992EC5 /* ColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnViewController.h; sourceTree = "<group>"; };
 		70069F761CE1AD9F00992EC5 /* ColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnViewController.m; sourceTree = "<group>"; };
-		70069F791CE1B2AC00992EC5 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
-		70069F7A1CE1B2AC00992EC5 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		70069F7F1CE1C02B00992EC5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		70069F801CE1C02B00992EC5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		70069F8B1CE1C8FE00992EC5 /* PanGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureViewController.h; sourceTree = "<group>"; };
@@ -60,12 +55,9 @@
 		70069F8F1CE1C96400992EC5 /* NonPanGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonPanGestureViewController.m; sourceTree = "<group>"; };
 		70069F971CE1D04D00992EC5 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		70069F981CE1D04D00992EC5 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		70069FA21CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
-		70069FA31CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		70069FAA1CE1F18900992EC5 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		70069FAB1CE1F18900992EC5 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 		70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
-		70069FAF1CE1F73600992EC5 /* ScreenShotBack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenShotBack.gif; sourceTree = "<group>"; };
 		7078A0741CE2C12B0031AC4A /* NonNavgationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonNavgationBarViewController.h; sourceTree = "<group>"; };
 		7078A0751CE2C12B0031AC4A /* NonNavgationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonNavgationBarViewController.m; sourceTree = "<group>"; };
 		7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenShotPop.gif; sourceTree = "<group>"; };
@@ -111,7 +103,6 @@
 				70069F8F1CE1C96400992EC5 /* NonPanGestureViewController.m */,
 				7078A0741CE2C12B0031AC4A /* NonNavgationBarViewController.h */,
 				7078A0751CE2C12B0031AC4A /* NonNavgationBarViewController.m */,
-				70069F781CE1B2A000992EC5 /* Category */,
 				70069F5F1CE1ACB300992EC5 /* ViewController */,
 				70069F521CE1A6B600992EC5 /* ScreenShot */,
 				70069F431CE1A51B00992EC5 /* Main.storyboard */,
@@ -127,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				70069F3B1CE1A51A00992EC5 /* main.m */,
-				70069FAF1CE1F73600992EC5 /* ScreenShotBack.gif */,
 				7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */,
 				70069F511CE1A59900992EC5 /* ScreenShotBack.pch */,
 			);
@@ -161,17 +151,6 @@
 				70069F701CE1AD6300992EC5 /* MineViewController.m */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		70069F781CE1B2A000992EC5 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				70069F791CE1B2AC00992EC5 /* UIView+Additions.h */,
-				70069F7A1CE1B2AC00992EC5 /* UIView+Additions.m */,
-				70069FA21CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.h */,
-				70069FA31CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +213,6 @@
 				70069F4A1CE1A51B00992EC5 /* LaunchScreen.storyboard in Resources */,
 				70069FAE1CE1F18900992EC5 /* RecommendViewController.xib in Resources */,
 				7078A0781CE2C8070031AC4A /* ScreenShotPop.gif in Resources */,
-				70069FB01CE1F73600992EC5 /* ScreenShotBack.gif in Resources */,
 				70069F471CE1A51B00992EC5 /* Assets.xcassets in Resources */,
 				70069F451CE1A51B00992EC5 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +237,6 @@
 				7078A0761CE2C12B0031AC4A /* NonNavgationBarViewController.m in Sources */,
 				70069F901CE1C96400992EC5 /* NonPanGestureViewController.m in Sources */,
 				70069FAD1CE1F18900992EC5 /* RecommendViewController.m in Sources */,
-				70069F7B1CE1B2AC00992EC5 /* UIView+Additions.m in Sources */,
-				70069FA41CE1E2D600992EC5 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				70069F991CE1D04D00992EC5 /* BaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

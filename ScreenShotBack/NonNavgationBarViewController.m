@@ -38,9 +38,6 @@
 #pragma mark tapTheLabel
 -(void)tapTheLabel:(UITapGestureRecognizer *)sender{
     NonNavgationBarViewController *nonNavBarVC = [[NonNavgationBarViewController alloc]init];
-#if kUseFullScreenGesture
-    nonNavBarVC.fd_interactivePopDisabled = YES;
-#endif
     [self.navigationController pushViewController:nonNavBarVC animated:YES];
     
 }

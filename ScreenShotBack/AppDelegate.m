@@ -30,7 +30,7 @@ static char szListenTabbarViewMove[] = "listenTabViewMove";
     [self.window makeKeyAndVisible];
     
 #if kUseScreenShotGesture
-    self.screenshotView = [[ScreenShotView alloc] initWithFrame:CGRectMake(0, 0, self.window.size.width, self.window.size.height)];
+    self.screenshotView = [[ScreenShotView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
     [self.window insertSubview:_screenshotView atIndex:0];
     
     [self.window.rootViewController.view addObserver:self forKeyPath:@"transform" options:NSKeyValueObservingOptionNew context:szListenTabbarViewMove];

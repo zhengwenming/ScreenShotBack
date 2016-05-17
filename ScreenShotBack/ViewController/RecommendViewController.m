@@ -58,12 +58,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section==0) {
         if (indexPath.row==0) {
-            
             NonPanGestureViewController *nonPanGesVC = [[NonPanGestureViewController alloc]init];
-#if kUseFullScreenGesture
-            nonPanGesVC.fd_interactivePopDisabled = YES;
-#endif
-            
             [self.navigationController pushViewController:nonPanGesVC animated:YES];
         }else{
             [self.navigationController pushViewController:[[PanGestureViewController alloc] init] animated:YES];

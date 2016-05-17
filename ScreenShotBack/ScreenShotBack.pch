@@ -10,20 +10,8 @@
 #define ScreenShotBack_pch
 
 /**
- *  kUseFullScreenGesture 和  kUseScreenShotGesture两个宏，决定项目用哪种返回效果
- 
- *  kUseFullScreenGesture为全屏返回效果   0为关闭，1为打开
-    kUseScreenShotGesture为截图返回效果   0为关闭，1为打开
- 
- *  kUseFullScreenGesture全屏返回优先级大，因为他是category，所以kUseFullScreenGesture打开后，截图返回实效
- *
+ kUseScreenShotGesture为截图返回效果   0为关闭，1为打开
  */
-
-#pragma mark -------------------全屏返回手势
-#define kUseFullScreenGesture 0
-
-
-
 #pragma mark -------------------截图返回手势
 #define kUseScreenShotGesture 1
 
@@ -33,7 +21,6 @@
 
 
 
-#import "UINavigationController+FDFullscreenPopGesture.h"
 
 
 //RGB
@@ -43,8 +30,5 @@
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
-
-
-#import  "UIView+Additions.h"
 
 #endif /* ScreenShotBack_pch */
