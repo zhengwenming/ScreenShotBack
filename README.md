@@ -1,6 +1,11 @@
 # ScreenShotBack
-ScreenShotBack，截图手势返回，景深效果，类似斗鱼APP的手势返回。
+ScreenShotBack，截图手势返回，景深效果，类似斗鱼、天天快报等APP的手势返回。对于每个VC都可以关闭或者打开手势返回，一个属性搞定。
 
-![image](https://github.com/zhengwenming/ScreenShotBack/blob/master/ScreenShotBack/ScreenShotBack.gif)   
+    youVC.enablePanGesture =  YES;（打开返回手势）默认为YES
+    youVC.enablePanGesture =   NO; （关闭返回手势）
 
-欢迎加入iOS技术支持群487599875。
+# 注 ：隐藏的导航栏的返回效果自己看GIF，6666666.
+
+![image](https://github.com/zhengwenming/ScreenShotBack/blob/master/ScreenShotBack/ScreenShotPop.gif)   
+
+#欢迎加入iOS技术支持群487599875。
