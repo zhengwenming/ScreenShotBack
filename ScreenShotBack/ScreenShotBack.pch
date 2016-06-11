@@ -18,7 +18,9 @@
 
 
 
+#import "AppDelegate.h"
 
+#define TheUserDefaults [NSUserDefaults standardUserDefaults]
 
 
 

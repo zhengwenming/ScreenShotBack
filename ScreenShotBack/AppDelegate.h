@@ -17,12 +17,13 @@
 
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, readonly, strong) TabBarViewController *tabBarViewController;
+@property (nonatomic, strong) TabBarViewController *tabBarViewController;
 #if kUseScreenShotGesture
 @property (strong, nonatomic) ScreenShotView *screenshotView;
 #endif
 
-
+/// func
++ (AppDelegate* )shareAppDelegate;
 
 @end
 

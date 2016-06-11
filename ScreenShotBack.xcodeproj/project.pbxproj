@@ -23,6 +23,7 @@
 		70069F991CE1D04D00992EC5 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F981CE1D04D00992EC5 /* BaseNavigationController.m */; };
 		70069FAD1CE1F18900992EC5 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069FAB1CE1F18900992EC5 /* RecommendViewController.m */; };
 		70069FAE1CE1F18900992EC5 /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */; };
+		702407631D0BF0FB00A43A93 /* UserGuiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */; };
 		7078A0761CE2C12B0031AC4A /* NonNavgationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7078A0751CE2C12B0031AC4A /* NonNavgationBarViewController.m */; };
 		7078A0781CE2C8070031AC4A /* ScreenShotPop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,8 @@
 		70069FAA1CE1F18900992EC5 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		70069FAB1CE1F18900992EC5 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 		70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
+		702407611D0BF0FB00A43A93 /* UserGuiderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGuiderViewController.h; sourceTree = "<group>"; };
+		702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGuiderViewController.m; sourceTree = "<group>"; };
 		7078A0741CE2C12B0031AC4A /* NonNavgationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonNavgationBarViewController.h; sourceTree = "<group>"; };
 		7078A0751CE2C12B0031AC4A /* NonNavgationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonNavgationBarViewController.m; sourceTree = "<group>"; };
 		7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenShotPop.gif; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 		70069F5F1CE1ACB300992EC5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				702407601D0BF0E000A43A93 /* UserGuiderViewController */,
 				70069FAA1CE1F18900992EC5 /* RecommendViewController.h */,
 				70069FAB1CE1F18900992EC5 /* RecommendViewController.m */,
 				70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */,
@@ -151,6 +155,15 @@
 				70069F701CE1AD6300992EC5 /* MineViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		702407601D0BF0E000A43A93 /* UserGuiderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				702407611D0BF0FB00A43A93 /* UserGuiderViewController.h */,
+				702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */,
+			);
+			path = UserGuiderViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +245,7 @@
 				70069F3F1CE1A51A00992EC5 /* AppDelegate.m in Sources */,
 				70069F3C1CE1A51A00992EC5 /* main.m in Sources */,
 				70069F711CE1AD6300992EC5 /* MineViewController.m in Sources */,
+				702407631D0BF0FB00A43A93 /* UserGuiderViewController.m in Sources */,
 				70069F811CE1C02B00992EC5 /* BaseViewController.m in Sources */,
 				70069F681CE1AD0300992EC5 /* OnlineViewController.m in Sources */,
 				7078A0761CE2C12B0031AC4A /* NonNavgationBarViewController.m in Sources */,

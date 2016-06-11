@@ -7,25 +7,33 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UserGuiderViewController.h"
 #if kUseScreenShotGesture
 static char szListenTabbarViewMove[] = "listenTabViewMove";
 #endif
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate
 
-@synthesize tabBarViewController = tabBarViewController_;
+#pragma mark
+#pragma mark loadRootVC
+- (void)loadRootVC {
+    if (![TheUserDefaults boolForKey:@"firstLaunch"]) {
+        [TheUserDefaults setBool:YES forKey:@"firstLaunch"];
+        [TheUserDefaults synchronize];
+        self.window.rootViewController = [[UserGuiderViewController alloc]init];
+    }
+    else {
+        self.window.rootViewController = self.tabBarViewController= [[TabBarViewController alloc] init];;
+    }
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     /*初始化视图*/
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    tabBarViewController_ = [[TabBarViewController alloc] init];
-    self.window.rootViewController = tabBarViewController_;
+    [self loadRootVC];
+
+
     //active
     [self.window makeKeyAndVisible];
     
@@ -77,5 +85,8 @@ static char szListenTabbarViewMove[] = "listenTabViewMove";
 - (void)dealloc
 {
     [self.window.rootViewController.view removeObserver:self forKeyPath:@"transform" context:szListenTabbarViewMove];
+}
++ (AppDelegate* )shareAppDelegate {
+    return (AppDelegate*)[UIApplication sharedApplication].delegate;
 }
 @end
