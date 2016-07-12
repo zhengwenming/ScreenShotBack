@@ -16,7 +16,7 @@
 @implementation BaseNavigationController
 
 
-// 打开边界多少距离才出发pop
+// 打开边界多少距离才触发pop
 #define DISTANCE_TO_POP 80
 
 
