@@ -16,8 +16,3 @@
 ![image](https://github.com/zhengwenming/ScreenShotBack/blob/master/ScreenShotBack/ScreenShotPop.gif)   
 
 #欢迎加入iOS技术支持群487599875,进群请修改群名片格式。（2元付费群，手机端可以加，电脑加不了。慎入！）
-
-    @interface BaseViewController : UIViewController
-    @property (nonatomic, assign) BOOL enablePanGesture;//是否支持拖动pop手势，默认yes,支持手势
-
-    @end
