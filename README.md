@@ -1,7 +1,7 @@
 # ScreenShotBack
 截图手势返回，景深效果，类似斗鱼、天天快报、腾讯新闻等APP的手势返回。对于每个VC都可以关闭或者打开手势返回，一个属性搞定。
 
-```java
+```Objective-C
     yourVC.enablePanGesture =  YES;（打开返回手势）默认为YES
     yourVC.enablePanGesture =   NO; （关闭返回手势）
     
