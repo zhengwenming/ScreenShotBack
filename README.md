@@ -3,6 +3,13 @@
 
     yourVC.enablePanGesture =  YES;（打开返回手势）默认为YES
     yourVC.enablePanGesture =   NO; （关闭返回手势）
+    
+    
+
+    @interface BaseViewController : UIViewController
+    @property (nonatomic, assign) BOOL enablePanGesture;//是否支持拖动pop手势，默认yes,支持手势
+
+    @end
 
 # 注 ：隐藏的导航栏的返回效果自己看GIF，6666666.
 
