@@ -10,6 +10,13 @@
      @property (nonatomic, assign) BOOL enablePanGesture;//是否支持拖动pop手势，默认yes,支持手势
 
      @end
+     
+     
+     @implementation BaseNavigationController
+
+    这里可以改变触发的距离值
+    // 打开边界多少距离才触发pop
+    #define DISTANCE_TO_POP 80
 ```
 
 
