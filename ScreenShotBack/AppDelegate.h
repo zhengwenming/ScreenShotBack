@@ -7,19 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TabBarViewController.h"
+
+#warning 第一步
+
 #if kUseScreenShotGesture
 #import "ScreenShotView.h"
 #endif
-#import "TabBarViewController.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-
-
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) TabBarViewController *tabBarViewController;
+#warning 第二步
+
 #if kUseScreenShotGesture
-@property (strong, nonatomic) ScreenShotView *screenshotView;
+@property (nonatomic, strong) ScreenShotView *screenshotView;
 #endif
 
 /// func

@@ -8,9 +8,7 @@
 
 #import "AppDelegate.h"
 #import "UserGuiderViewController.h"
-#if kUseScreenShotGesture
-static char szListenTabbarViewMove[] = "listenTabViewMove";
-#endif
+
 
 @implementation AppDelegate
 
@@ -32,34 +30,25 @@ static char szListenTabbarViewMove[] = "listenTabViewMove";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self loadRootVC];
+    
+    
+#warning 第三步
 
+#if kUseScreenShotGesture
+    self.screenshotView = [[ScreenShotView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
+    [self.window insertSubview:self.screenshotView atIndex:0];
+    self.screenshotView.hidden = YES;
+#endif
 
     //active
     [self.window makeKeyAndVisible];
     
-#if kUseScreenShotGesture
-    self.screenshotView = [[ScreenShotView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
-    [self.window insertSubview:_screenshotView atIndex:0];
-    
-    [self.window.rootViewController.view addObserver:self forKeyPath:@"transform" options:NSKeyValueObservingOptionNew context:szListenTabbarViewMove];
-    
-    self.screenshotView.hidden = YES;
-#endif
+
     
     
     return YES;
 }
-#if kUseScreenShotGesture
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    if (context == szListenTabbarViewMove)
-    {
-        NSValue *value  = [change objectForKey:NSKeyValueChangeNewKey];
-        CGAffineTransform newTransform = [value CGAffineTransformValue];
-        [self.screenshotView showEffectChange:CGPointMake(newTransform.tx, 0) ];
-    }
-}
-#endif
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -82,10 +71,7 @@ static char szListenTabbarViewMove[] = "listenTabViewMove";
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-- (void)dealloc
-{
-    [self.window.rootViewController.view removeObserver:self forKeyPath:@"transform" context:szListenTabbarViewMove];
-}
+
 + (AppDelegate* )shareAppDelegate {
     return (AppDelegate*)[UIApplication sharedApplication].delegate;
 }

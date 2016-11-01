@@ -11,7 +11,11 @@
 #import "ScreenShotView.h"
 
 #import <QuartzCore/QuartzCore.h>
-#import "AppDelegate.h"
+
+#if kUseScreenShotGesture
+static char szListenTabbarViewMove[] = "listenTabViewMove";
+#endif
+
 
 @implementation ScreenShotView
 
@@ -28,10 +32,28 @@
         _maskView.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0.4];
         [self addSubview:_imgView];
         [self addSubview:_maskView];
+        
+#if kUseScreenShotGesture
+        [[AppDelegate shareAppDelegate].window.rootViewController.view addObserver:self forKeyPath:@"transform" options:NSKeyValueObservingOptionNew context:szListenTabbarViewMove];
+#endif
+        
+        
+        
+        
     }
     return self;
 }
-
+#if kUseScreenShotGesture
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (context == szListenTabbarViewMove)
+    {
+        NSValue *value  = [change objectForKey:NSKeyValueChangeNewKey];
+        CGAffineTransform newTransform = [value CGAffineTransformValue];
+        [self showEffectChange:CGPointMake(newTransform.tx, 0) ];
+    }
+}
+#endif
 - (void)layoutSubviews
 {
     [super layoutSubviews];
@@ -68,5 +90,11 @@
     self.imgView.transform = CGAffineTransformMakeScale(0.95, 0.95);
 }
 
-
+- (void)dealloc
+{
+#if kUseScreenShotGesture
+[[AppDelegate shareAppDelegate].window.rootViewController.view removeObserver:self forKeyPath:@"transform" context:szListenTabbarViewMove];
+#endif
+    
+}
 @end

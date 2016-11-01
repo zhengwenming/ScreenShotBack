@@ -8,7 +8,7 @@
 
 #import "BaseNavigationController.h"
 #import "BaseViewController.h"
-#import "AppDelegate.h"
+
 @interface BaseNavigationController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
 
 @end
@@ -34,11 +34,14 @@
 {
     [super viewDidLoad];
     //屏蔽系统的手势
+#if kUseScreenShotGesture
     self.interactivePopGestureRecognizer.enabled = NO;
-
     self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
     _panGesture.delegate = self;
     [self.view addGestureRecognizer:_panGesture];
+#endif
+
+ 
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer {
@@ -71,6 +74,7 @@
     
     return YES;
 }
+#if kUseScreenShotGesture
 
 - (void)handlePanGesture:(UIPanGestureRecognizer *)panGesture
 {
@@ -121,25 +125,40 @@
             }];
         }
     }
+
 }
+
+- (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    NSArray *arr = [super popToViewController:viewController animated:animated];
+    
+    if (self.arrayScreenshot.count > arr.count)
+    {
+        for (int i = 0; i < arr.count; i++) {
+            [self.arrayScreenshot removeLastObject];
+        }
+    }
+    return arr;
+}
+
+#endif
 
 
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-#if kUseScreenShotGesture
     if (self.viewControllers.count == 0){
         return [super pushViewController:viewController animated:animated];
     }else if (self.viewControllers.count>=1) {
         viewController.hidesBottomBarWhenPushed = YES;//隐藏二级页面的tabbar
     }
+#if kUseScreenShotGesture
     AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(appdelegate.window.frame.size.width, appdelegate.window.frame.size.height), YES, 0);
     [appdelegate.window.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     [self.arrayScreenshot addObject:viewImage];
-    
     appdelegate.screenshotView.imgView.image = viewImage;
 #endif
     [super pushViewController:viewController animated:animated];
@@ -151,7 +170,6 @@
     AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     [self.arrayScreenshot removeLastObject];
     UIImage *image = [self.arrayScreenshot lastObject];
-    
     if (image)
         appdelegate.screenshotView.imgView.image = image;
 #endif
@@ -172,19 +190,6 @@
         appdelegate.screenshotView.imgView.image = image;
 #endif
     return [super popToRootViewControllerAnimated:animated];
-}
-
-- (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    NSArray *arr = [super popToViewController:viewController animated:animated];
-    
-    if (self.arrayScreenshot.count > arr.count)
-    {
-        for (int i = 0; i < arr.count; i++) {
-            [self.arrayScreenshot removeLastObject];
-        }
-    }
-    return arr;
 }
 
 - (void)didReceiveMemoryWarning
