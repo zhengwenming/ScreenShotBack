@@ -24,4 +24,4 @@
 
 ![image](https://github.com/zhengwenming/ScreenShotBack/blob/master/ScreenShotBack/ScreenShotPop.gif)   
 
-#欢迎加入iOS技术支持群479259423,进群请修改群名片格式。（2元付费群，手机端可以加，电脑加不了。慎入！）
+欢迎加入iOS技术支持群479259423,进群请修改群名片格式。（2元付费群，手机端可以加，电脑加不了。慎入！）
