@@ -1,18 +1,18 @@
 //
-//  NonPanGestureViewController.m
+//  WithoutPanGestureViewController.m
 //  ScreenShotBack
 //
-//  Created by 郑文明 on 16/5/10.
-//  Copyright © 2016年 郑文明. All rights reserved.
+//  Created by 郑文明 on 17/1/13.
+//  Copyright © 2017年 郑文明. All rights reserved.
 //
 
-#import "NonPanGestureViewController.h"
+#import "WithoutPanGestureViewController.h"
 
-@interface NonPanGestureViewController ()
+@interface WithoutPanGestureViewController ()
 
 @end
 
-@implementation NonPanGestureViewController
+@implementation WithoutPanGestureViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,7 +21,7 @@
      */
     self.navigationItem.title = @"关闭手势";
     self.enablePanGesture = NO;
-
+    
     
     UILabel *aLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 50)];
     aLabel.textAlignment = NSTextAlignmentCenter;
@@ -35,13 +35,13 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapTheLabel:)];
     [aLabel addGestureRecognizer:tap];
 }
-#pragma mark 
+#pragma mark
 #pragma mark tapTheLabel
 -(void)tapTheLabel:(UITapGestureRecognizer *)sender{
-    NonPanGestureViewController *nonPanGesVC = [[NonPanGestureViewController alloc]init];
-
+    WithoutPanGestureViewController *nonPanGesVC = [[WithoutPanGestureViewController alloc]init];
+    
     [self.navigationController pushViewController:nonPanGesVC animated:YES];
-
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

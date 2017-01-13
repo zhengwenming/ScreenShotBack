@@ -12,17 +12,22 @@
 		70069F451CE1A51B00992EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70069F431CE1A51B00992EC5 /* Main.storyboard */; };
 		70069F471CE1A51B00992EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70069F461CE1A51B00992EC5 /* Assets.xcassets */; };
 		70069F4A1CE1A51B00992EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70069F481CE1A51B00992EC5 /* LaunchScreen.storyboard */; };
-		70069F5E1CE1AB4F00992EC5 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F5D1CE1AB4F00992EC5 /* TabBarViewController.m */; };
-		70069F681CE1AD0300992EC5 /* OnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F671CE1AD0300992EC5 /* OnlineViewController.m */; };
-		70069F711CE1AD6300992EC5 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F701CE1AD6300992EC5 /* MineViewController.m */; };
-		70069F771CE1AD9F00992EC5 /* ColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F761CE1AD9F00992EC5 /* ColumnViewController.m */; };
-		70069F8D1CE1C8FE00992EC5 /* PanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F8C1CE1C8FE00992EC5 /* PanGestureViewController.m */; };
-		70069F901CE1C96400992EC5 /* NonPanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069F8F1CE1C96400992EC5 /* NonPanGestureViewController.m */; };
-		70069FAD1CE1F18900992EC5 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70069FAB1CE1F18900992EC5 /* RecommendViewController.m */; };
-		70069FAE1CE1F18900992EC5 /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */; };
 		702407631D0BF0FB00A43A93 /* UserGuiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */; };
-		7078A0761CE2C12B0031AC4A /* NonNavgationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7078A0751CE2C12B0031AC4A /* NonNavgationBarViewController.m */; };
 		7078A0781CE2C8070031AC4A /* ScreenShotPop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */; };
+		BF57BAEA1E287B420053FA4C /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAE91E287B420053FA4C /* TabBarViewController.m */; };
+		BF57BAF31E287BAD0053FA4C /* PanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAF01E287BAD0053FA4C /* PanGestureViewController.m */; };
+		BF57BB001E287C550053FA4C /* ColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAF61E287C550053FA4C /* ColumnViewController.m */; };
+		BF57BB011E287C550053FA4C /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAF91E287C550053FA4C /* RecommendViewController.m */; };
+		BF57BB021E287C550053FA4C /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAFC1E287C550053FA4C /* MineViewController.m */; };
+		BF57BB031E287C550053FA4C /* OnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAFF1E287C550053FA4C /* OnlineViewController.m */; };
+		BF57BB051E287C780053FA4C /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF57BB041E287C780053FA4C /* RecommendViewController.xib */; };
+		BF57BB081E287D0B0053FA4C /* WithoutNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB071E287D0B0053FA4C /* WithoutNavigationBarViewController.m */; };
+		BF57BB0B1E287D4A0053FA4C /* WithoutPanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB0A1E287D4A0053FA4C /* WithoutPanGestureViewController.m */; };
+		BF57BB101E2880B60053FA4C /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB0F1E2880B60053FA4C /* ContainerViewController.m */; };
+		BF57BB131E2880E50053FA4C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB121E2880E50053FA4C /* DetailViewController.m */; };
+		BF57BB1A1E2880FE0053FA4C /* NearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB151E2880FE0053FA4C /* NearbyViewController.m */; };
+		BF57BB1C1E2880FE0053FA4C /* SquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB191E2880FE0053FA4C /* SquareViewController.m */; };
+		BF57BB1F1E28849D0053FA4C /* RecommendmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB1E1E28849D0053FA4C /* RecommendmeViewController.m */; };
 		BF7FD0361DC832D4000CC513 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7FD0301DC832D4000CC513 /* BaseNavigationController.m */; };
 		BF7FD0371DC832D4000CC513 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7FD0321DC832D4000CC513 /* BaseViewController.m */; };
 		BF7FD0381DC832D4000CC513 /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7FD0351DC832D4000CC513 /* ScreenShotView.m */; };
@@ -38,26 +43,36 @@
 		70069F491CE1A51B00992EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70069F4B1CE1A51C00992EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70069F511CE1A59900992EC5 /* ScreenShotBack.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenShotBack.pch; sourceTree = "<group>"; };
-		70069F5C1CE1AB4F00992EC5 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
-		70069F5D1CE1AB4F00992EC5 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
-		70069F661CE1AD0300992EC5 /* OnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineViewController.h; sourceTree = "<group>"; };
-		70069F671CE1AD0300992EC5 /* OnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineViewController.m; sourceTree = "<group>"; };
-		70069F6F1CE1AD6300992EC5 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		70069F701CE1AD6300992EC5 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		70069F751CE1AD9F00992EC5 /* ColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnViewController.h; sourceTree = "<group>"; };
-		70069F761CE1AD9F00992EC5 /* ColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnViewController.m; sourceTree = "<group>"; };
-		70069F8B1CE1C8FE00992EC5 /* PanGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureViewController.h; sourceTree = "<group>"; };
-		70069F8C1CE1C8FE00992EC5 /* PanGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanGestureViewController.m; sourceTree = "<group>"; };
-		70069F8E1CE1C96400992EC5 /* NonPanGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonPanGestureViewController.h; sourceTree = "<group>"; };
-		70069F8F1CE1C96400992EC5 /* NonPanGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonPanGestureViewController.m; sourceTree = "<group>"; };
-		70069FAA1CE1F18900992EC5 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
-		70069FAB1CE1F18900992EC5 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
-		70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
 		702407611D0BF0FB00A43A93 /* UserGuiderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGuiderViewController.h; sourceTree = "<group>"; };
 		702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGuiderViewController.m; sourceTree = "<group>"; };
-		7078A0741CE2C12B0031AC4A /* NonNavgationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonNavgationBarViewController.h; sourceTree = "<group>"; };
-		7078A0751CE2C12B0031AC4A /* NonNavgationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonNavgationBarViewController.m; sourceTree = "<group>"; };
 		7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenShotPop.gif; sourceTree = "<group>"; };
+		BF57BAE81E287B420053FA4C /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		BF57BAE91E287B420053FA4C /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		BF57BAEF1E287BAD0053FA4C /* PanGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureViewController.h; sourceTree = "<group>"; };
+		BF57BAF01E287BAD0053FA4C /* PanGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanGestureViewController.m; sourceTree = "<group>"; };
+		BF57BAF51E287C550053FA4C /* ColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnViewController.h; sourceTree = "<group>"; };
+		BF57BAF61E287C550053FA4C /* ColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnViewController.m; sourceTree = "<group>"; };
+		BF57BAF81E287C550053FA4C /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		BF57BAF91E287C550053FA4C /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		BF57BAFB1E287C550053FA4C /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		BF57BAFC1E287C550053FA4C /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		BF57BAFE1E287C550053FA4C /* OnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineViewController.h; sourceTree = "<group>"; };
+		BF57BAFF1E287C550053FA4C /* OnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineViewController.m; sourceTree = "<group>"; };
+		BF57BB041E287C780053FA4C /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
+		BF57BB061E287D0B0053FA4C /* WithoutNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithoutNavigationBarViewController.h; sourceTree = "<group>"; };
+		BF57BB071E287D0B0053FA4C /* WithoutNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithoutNavigationBarViewController.m; sourceTree = "<group>"; };
+		BF57BB091E287D4A0053FA4C /* WithoutPanGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithoutPanGestureViewController.h; sourceTree = "<group>"; };
+		BF57BB0A1E287D4A0053FA4C /* WithoutPanGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithoutPanGestureViewController.m; sourceTree = "<group>"; };
+		BF57BB0E1E2880B60053FA4C /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		BF57BB0F1E2880B60053FA4C /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		BF57BB111E2880E50053FA4C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BF57BB121E2880E50053FA4C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BF57BB141E2880FE0053FA4C /* NearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyViewController.h; sourceTree = "<group>"; };
+		BF57BB151E2880FE0053FA4C /* NearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyViewController.m; sourceTree = "<group>"; };
+		BF57BB181E2880FE0053FA4C /* SquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareViewController.h; sourceTree = "<group>"; };
+		BF57BB191E2880FE0053FA4C /* SquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareViewController.m; sourceTree = "<group>"; };
+		BF57BB1D1E28849D0053FA4C /* RecommendmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendmeViewController.h; sourceTree = "<group>"; };
+		BF57BB1E1E28849D0053FA4C /* RecommendmeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendmeViewController.m; sourceTree = "<group>"; };
 		BF7FD02F1DC832D4000CC513 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		BF7FD0301DC832D4000CC513 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		BF7FD0311DC832D4000CC513 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -99,14 +114,6 @@
 			children = (
 				70069F3D1CE1A51A00992EC5 /* AppDelegate.h */,
 				70069F3E1CE1A51A00992EC5 /* AppDelegate.m */,
-				70069F5C1CE1AB4F00992EC5 /* TabBarViewController.h */,
-				70069F5D1CE1AB4F00992EC5 /* TabBarViewController.m */,
-				70069F8B1CE1C8FE00992EC5 /* PanGestureViewController.h */,
-				70069F8C1CE1C8FE00992EC5 /* PanGestureViewController.m */,
-				70069F8E1CE1C96400992EC5 /* NonPanGestureViewController.h */,
-				70069F8F1CE1C96400992EC5 /* NonPanGestureViewController.m */,
-				7078A0741CE2C12B0031AC4A /* NonNavgationBarViewController.h */,
-				7078A0751CE2C12B0031AC4A /* NonNavgationBarViewController.m */,
 				70069F5F1CE1ACB300992EC5 /* ViewController */,
 				BF7FD02E1DC832D4000CC513 /* ScreenShotBack */,
 				70069F431CE1A51B00992EC5 /* Main.storyboard */,
@@ -131,16 +138,18 @@
 		70069F5F1CE1ACB300992EC5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BF57BB061E287D0B0053FA4C /* WithoutNavigationBarViewController.h */,
+				BF57BB071E287D0B0053FA4C /* WithoutNavigationBarViewController.m */,
+				BF57BB091E287D4A0053FA4C /* WithoutPanGestureViewController.h */,
+				BF57BB0A1E287D4A0053FA4C /* WithoutPanGestureViewController.m */,
+				BF57BAEF1E287BAD0053FA4C /* PanGestureViewController.h */,
+				BF57BAF01E287BAD0053FA4C /* PanGestureViewController.m */,
+				BF57BAE71E287B420053FA4C /* UITabbarController */,
+				BF57BAF71E287C550053FA4C /* 推荐 */,
+				BF57BAF41E287C550053FA4C /* 栏目 */,
+				BF57BAFD1E287C550053FA4C /* 直播 */,
+				BF57BAFA1E287C550053FA4C /* 我的 */,
 				702407601D0BF0E000A43A93 /* UserGuiderViewController */,
-				70069FAA1CE1F18900992EC5 /* RecommendViewController.h */,
-				70069FAB1CE1F18900992EC5 /* RecommendViewController.m */,
-				70069FAC1CE1F18900992EC5 /* RecommendViewController.xib */,
-				70069F751CE1AD9F00992EC5 /* ColumnViewController.h */,
-				70069F761CE1AD9F00992EC5 /* ColumnViewController.m */,
-				70069F661CE1AD0300992EC5 /* OnlineViewController.h */,
-				70069F671CE1AD0300992EC5 /* OnlineViewController.m */,
-				70069F6F1CE1AD6300992EC5 /* MineViewController.h */,
-				70069F701CE1AD6300992EC5 /* MineViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -152,6 +161,78 @@
 				702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */,
 			);
 			path = UserGuiderViewController;
+			sourceTree = "<group>";
+		};
+		BF57BAE71E287B420053FA4C /* UITabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				BF57BAE81E287B420053FA4C /* TabBarViewController.h */,
+				BF57BAE91E287B420053FA4C /* TabBarViewController.m */,
+			);
+			path = UITabbarController;
+			sourceTree = "<group>";
+		};
+		BF57BAF41E287C550053FA4C /* 栏目 */ = {
+			isa = PBXGroup;
+			children = (
+				BF57BB0C1E2880330053FA4C /* 手势冲突测试 */,
+				BF57BAF51E287C550053FA4C /* ColumnViewController.h */,
+				BF57BAF61E287C550053FA4C /* ColumnViewController.m */,
+			);
+			path = "栏目";
+			sourceTree = "<group>";
+		};
+		BF57BAF71E287C550053FA4C /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				BF57BAF81E287C550053FA4C /* RecommendViewController.h */,
+				BF57BAF91E287C550053FA4C /* RecommendViewController.m */,
+				BF57BB041E287C780053FA4C /* RecommendViewController.xib */,
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		BF57BAFA1E287C550053FA4C /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				BF57BAFB1E287C550053FA4C /* MineViewController.h */,
+				BF57BAFC1E287C550053FA4C /* MineViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		BF57BAFD1E287C550053FA4C /* 直播 */ = {
+			isa = PBXGroup;
+			children = (
+				BF57BAFE1E287C550053FA4C /* OnlineViewController.h */,
+				BF57BAFF1E287C550053FA4C /* OnlineViewController.m */,
+			);
+			path = "直播";
+			sourceTree = "<group>";
+		};
+		BF57BB0C1E2880330053FA4C /* 手势冲突测试 */ = {
+			isa = PBXGroup;
+			children = (
+				BF57BB111E2880E50053FA4C /* DetailViewController.h */,
+				BF57BB121E2880E50053FA4C /* DetailViewController.m */,
+				BF57BB0D1E28807A0053FA4C /* childrenVC */,
+				BF57BB0E1E2880B60053FA4C /* ContainerViewController.h */,
+				BF57BB0F1E2880B60053FA4C /* ContainerViewController.m */,
+			);
+			path = "手势冲突测试";
+			sourceTree = "<group>";
+		};
+		BF57BB0D1E28807A0053FA4C /* childrenVC */ = {
+			isa = PBXGroup;
+			children = (
+				BF57BB141E2880FE0053FA4C /* NearbyViewController.h */,
+				BF57BB151E2880FE0053FA4C /* NearbyViewController.m */,
+				BF57BB1D1E28849D0053FA4C /* RecommendmeViewController.h */,
+				BF57BB1E1E28849D0053FA4C /* RecommendmeViewController.m */,
+				BF57BB181E2880FE0053FA4C /* SquareViewController.h */,
+				BF57BB191E2880FE0053FA4C /* SquareViewController.m */,
+			);
+			path = childrenVC;
 			sourceTree = "<group>";
 		};
 		BF7FD02E1DC832D4000CC513 /* ScreenShotBack */ = {
@@ -199,6 +280,12 @@
 				TargetAttributes = {
 					70069F361CE1A51A00992EC5 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = XJVZHH6395;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -226,10 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70069F4A1CE1A51B00992EC5 /* LaunchScreen.storyboard in Resources */,
-				70069FAE1CE1F18900992EC5 /* RecommendViewController.xib in Resources */,
 				7078A0781CE2C8070031AC4A /* ScreenShotPop.gif in Resources */,
 				70069F471CE1A51B00992EC5 /* Assets.xcassets in Resources */,
 				70069F451CE1A51B00992EC5 /* Main.storyboard in Resources */,
+				BF57BB051E287C780053FA4C /* RecommendViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,20 +327,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70069F771CE1AD9F00992EC5 /* ColumnViewController.m in Sources */,
-				70069F8D1CE1C8FE00992EC5 /* PanGestureViewController.m in Sources */,
+				BF57BAF31E287BAD0053FA4C /* PanGestureViewController.m in Sources */,
 				BF7FD0381DC832D4000CC513 /* ScreenShotView.m in Sources */,
-				70069F5E1CE1AB4F00992EC5 /* TabBarViewController.m in Sources */,
+				BF57BB081E287D0B0053FA4C /* WithoutNavigationBarViewController.m in Sources */,
+				BF57BB131E2880E50053FA4C /* DetailViewController.m in Sources */,
 				70069F3F1CE1A51A00992EC5 /* AppDelegate.m in Sources */,
 				70069F3C1CE1A51A00992EC5 /* main.m in Sources */,
-				70069F711CE1AD6300992EC5 /* MineViewController.m in Sources */,
+				BF57BB031E287C550053FA4C /* OnlineViewController.m in Sources */,
+				BF57BB1A1E2880FE0053FA4C /* NearbyViewController.m in Sources */,
+				BF57BB1C1E2880FE0053FA4C /* SquareViewController.m in Sources */,
+				BF57BB1F1E28849D0053FA4C /* RecommendmeViewController.m in Sources */,
+				BF57BB0B1E287D4A0053FA4C /* WithoutPanGestureViewController.m in Sources */,
 				702407631D0BF0FB00A43A93 /* UserGuiderViewController.m in Sources */,
-				70069F681CE1AD0300992EC5 /* OnlineViewController.m in Sources */,
+				BF57BB001E287C550053FA4C /* ColumnViewController.m in Sources */,
+				BF57BAEA1E287B420053FA4C /* TabBarViewController.m in Sources */,
+				BF57BB021E287C550053FA4C /* MineViewController.m in Sources */,
 				BF7FD0361DC832D4000CC513 /* BaseNavigationController.m in Sources */,
+				BF57BB011E287C550053FA4C /* RecommendViewController.m in Sources */,
 				BF7FD0371DC832D4000CC513 /* BaseViewController.m in Sources */,
-				7078A0761CE2C12B0031AC4A /* NonNavgationBarViewController.m in Sources */,
-				70069F901CE1C96400992EC5 /* NonPanGestureViewController.m in Sources */,
-				70069FAD1CE1F18900992EC5 /* RecommendViewController.m in Sources */,
+				BF57BB101E2880B60053FA4C /* ContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJVZHH6395;
 				GCC_PREFIX_HEADER = ScreenShotBack/ScreenShotBack.pch;
 				INFOPLIST_FILE = ScreenShotBack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -376,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJVZHH6395;
 				GCC_PREFIX_HEADER = ScreenShotBack/ScreenShotBack.pch;
 				INFOPLIST_FILE = ScreenShotBack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

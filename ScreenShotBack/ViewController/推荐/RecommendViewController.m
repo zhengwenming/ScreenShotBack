@@ -8,8 +8,9 @@
 
 #import "RecommendViewController.h"
 #import "PanGestureViewController.h"
-#import "NonPanGestureViewController.h"
-#import "NonNavgationBarViewController.h"
+#import "WithoutPanGestureViewController.h"
+#import "WithoutNavigationBarViewController.h"
+
 @interface RecommendViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *dataSource;
@@ -26,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     dataSource = @[@{@"带导航栏测试":@[@"进入关闭（手势返回）的VC",@"进入打开（手势返回）的VC"]},
-                   @{@"隐藏导航栏测试":@[@"进入打开（手势返回）的VC"]}];
+                   @{@"隐藏导航栏测试":@[@"进入关闭（手势返回）的VC",@"进入打开（手势返回）的VC"]}];
     _table.rowHeight = 60;
     _table.tableFooterView = [UIView new];
 }
@@ -58,17 +59,21 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section==0) {
         if (indexPath.row==0) {
-            NonPanGestureViewController *nonPanGesVC = [[NonPanGestureViewController alloc]init];
-            [self.navigationController pushViewController:nonPanGesVC animated:YES];
+             [self.navigationController pushViewController:[[WithoutPanGestureViewController alloc] init] animated:YES];
         }else{
-            [self.navigationController pushViewController:[[PanGestureViewController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[PanGestureViewController alloc]init] animated:YES];
         }
     }else if (indexPath.section==1){
-        [self.navigationController pushViewController:[[NonNavgationBarViewController alloc] init] animated:YES];
+        if (indexPath.row==0) {
+         WithoutNavigationBarViewController *withoutNav =    [[WithoutNavigationBarViewController alloc] init];
+            withoutNav.enablePanGesture = NO;
+            [self.navigationController pushViewController:withoutNav animated:YES];
+        }else{
+            [self.navigationController pushViewController:[[WithoutNavigationBarViewController alloc] init] animated:YES];
+        }
+
+        
     }
-    
-    
-    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
