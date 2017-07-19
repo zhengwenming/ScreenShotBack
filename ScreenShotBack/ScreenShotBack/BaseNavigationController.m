@@ -52,6 +52,7 @@
     [UINavigationBar appearance].barTintColor = [UIColor orangeColor];
     [UINavigationBar appearance].tintColor = [UIColor whiteColor];
 }
+///是否让这个手势起作用，生效，返回NO，无效，返回YES手势生效
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer {
     if (gestureRecognizer.view == self.view) {
         BaseViewController *topView = (BaseViewController *)self.topViewController;
@@ -80,11 +81,11 @@
 {
     if ([otherGestureRecognizer isKindOfClass:NSClassFromString(@"UIScrollViewPanGestureRecognizer")] || [otherGestureRecognizer isKindOfClass:NSClassFromString(@"UIPanGestureRecognizer")]|| [otherGestureRecognizer isKindOfClass:NSClassFromString(@"UIScrollViewPagingSwipeGestureRecognizer")]) //
     {
-        
+        //冲突要有两个，二者不可兼得
         UIView *aView = otherGestureRecognizer.view;
         if ([aView isKindOfClass:[UIScrollView class]]) {
             UIScrollView *sv = (UIScrollView *)aView;
-            if (sv.contentOffset.x==0) {
+            if (sv.contentOffset.x==0) {//判断依据
                 return YES;
             }
         }
@@ -97,22 +98,31 @@
 
 - (void)handlePanGesture:(UIPanGestureRecognizer *)panGesture
 {
-    AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    AppDelegate *appdelegate = [AppDelegate shareAppDelegate];
     
     UIViewController *rootVC = appdelegate.window.rootViewController;
-    UIViewController *presentedVC = rootVC.presentedViewController;
+    
+    UINavigationController *nav= appdelegate.tabBarViewController.selectedViewController;
+    UIViewController * currentVC = nav.topViewController;
+    UIViewController * presentedVC = rootVC.presentedViewController;
+
     if (self.viewControllers.count == 1)
     {
         return;
     }
     if (panGesture.state == UIGestureRecognizerStateBegan)
     {
+        if (currentVC.gestureBeganBlock) {
+            currentVC.gestureBeganBlock(currentVC);
+        }
         appdelegate.screenshotView.hidden = NO;
     }
     else if (panGesture.state == UIGestureRecognizerStateChanged)
     {
         CGPoint point_inView = [panGesture translationInView:self.view];
-        
+        if (currentVC.gestureChangedBlock) {
+            currentVC.gestureChangedBlock(currentVC);
+        }
         if (point_inView.x >= 10)
         {
             rootVC.view.transform = CGAffineTransformMakeTranslation(point_inView.x - 10, 0);
@@ -121,6 +131,9 @@
     }
     else if (panGesture.state == UIGestureRecognizerStateEnded)
     {
+        if (currentVC.gestureEndedBlock) {
+            currentVC.gestureEndedBlock(currentVC);
+        }
         CGPoint point_inView = [panGesture translationInView:self.view];
         if (point_inView.x >= DISTANCE_TO_POP)
         {

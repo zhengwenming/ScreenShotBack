@@ -125,7 +125,7 @@
     mainScrollView.delegate = self;
     mainScrollView.backgroundColor = [UIColor whiteColor];
     mainScrollView.pagingEnabled = YES;
-    mainScrollView.bounces = NO;
+    mainScrollView.bounces = NO;//弹簧效果
     mainScrollView.showsHorizontalScrollIndicator = NO;
     mainScrollView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:mainScrollView];

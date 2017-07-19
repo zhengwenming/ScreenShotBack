@@ -14,6 +14,7 @@
 		70069F4A1CE1A51B00992EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70069F481CE1A51B00992EC5 /* LaunchScreen.storyboard */; };
 		702407631D0BF0FB00A43A93 /* UserGuiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */; };
 		7078A0781CE2C8070031AC4A /* ScreenShotPop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */; };
+		70B3301A1F1FA517006395D6 /* UIViewController+GestureStateBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B330191F1FA517006395D6 /* UIViewController+GestureStateBlock.m */; };
 		BF57BAEA1E287B420053FA4C /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAE91E287B420053FA4C /* TabBarViewController.m */; };
 		BF57BAF31E287BAD0053FA4C /* PanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAF01E287BAD0053FA4C /* PanGestureViewController.m */; };
 		BF57BB001E287C550053FA4C /* ColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAF61E287C550053FA4C /* ColumnViewController.m */; };
@@ -46,6 +47,8 @@
 		702407611D0BF0FB00A43A93 /* UserGuiderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGuiderViewController.h; sourceTree = "<group>"; };
 		702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGuiderViewController.m; sourceTree = "<group>"; };
 		7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenShotPop.gif; sourceTree = "<group>"; };
+		70B330181F1FA517006395D6 /* UIViewController+GestureStateBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GestureStateBlock.h"; sourceTree = "<group>"; };
+		70B330191F1FA517006395D6 /* UIViewController+GestureStateBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GestureStateBlock.m"; sourceTree = "<group>"; };
 		BF57BAE81E287B420053FA4C /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		BF57BAE91E287B420053FA4C /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		BF57BAEF1E287BAD0053FA4C /* PanGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureViewController.h; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				BF7FD0301DC832D4000CC513 /* BaseNavigationController.m */,
 				BF7FD0311DC832D4000CC513 /* BaseViewController.h */,
 				BF7FD0321DC832D4000CC513 /* BaseViewController.m */,
+				70B330181F1FA517006395D6 /* UIViewController+GestureStateBlock.h */,
+				70B330191F1FA517006395D6 /* UIViewController+GestureStateBlock.m */,
 				BF7FD0331DC832D4000CC513 /* ScreenShotBackConfig.h */,
 				BF7FD0341DC832D4000CC513 /* ScreenShotView.h */,
 				BF7FD0351DC832D4000CC513 /* ScreenShotView.m */,
@@ -280,7 +285,7 @@
 				TargetAttributes = {
 					70069F361CE1A51A00992EC5 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = XJVZHH6395;
+						DevelopmentTeam = F57QM5EC39;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -345,6 +350,7 @@
 				BF7FD0361DC832D4000CC513 /* BaseNavigationController.m in Sources */,
 				BF57BB011E287C550053FA4C /* RecommendViewController.m in Sources */,
 				BF7FD0371DC832D4000CC513 /* BaseViewController.m in Sources */,
+				70B3301A1F1FA517006395D6 /* UIViewController+GestureStateBlock.m in Sources */,
 				BF57BB101E2880B60053FA4C /* ContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,7 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XJVZHH6395;
+				DEVELOPMENT_TEAM = F57QM5EC39;
 				GCC_PREFIX_HEADER = ScreenShotBack/ScreenShotBack.pch;
 				INFOPLIST_FILE = ScreenShotBack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -469,7 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XJVZHH6395;
+				DEVELOPMENT_TEAM = F57QM5EC39;
 				GCC_PREFIX_HEADER = ScreenShotBack/ScreenShotBack.pch;
 				INFOPLIST_FILE = ScreenShotBack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

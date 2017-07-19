@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+GestureStateBlock.h"
 
 @interface BaseViewController : UIViewController
 

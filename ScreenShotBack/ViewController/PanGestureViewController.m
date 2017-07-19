@@ -32,6 +32,22 @@
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapTheLabel:)];
     [aLabel addGestureRecognizer:tap];
+    
+    
+    self.gestureBeganBlock = ^(UIViewController *viewController) {
+        NSLog(@"gestureBeganBlock");
+    };
+    
+    self.gestureChangedBlock = ^(UIViewController *viewController) {
+        NSLog(@"gestureChangedBlock");
+
+    };
+    
+    self.gestureEndedBlock = ^(UIViewController *viewController) {
+        NSLog(@"gestureEndedBlock");
+    };
+    
+    
 }
 -(void)tapTheLabel:(UITapGestureRecognizer *)sender{
     PanGestureViewController *panGesVC = [[PanGestureViewController alloc]init];
