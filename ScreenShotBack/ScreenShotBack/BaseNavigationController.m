@@ -40,9 +40,9 @@
     _panGesture.delegate = self;
     [self.view addGestureRecognizer:_panGesture];
 #endif
-
+    
     [self configNavigationBar];
- 
+    
 }
 -(void)configNavigationBar{
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -84,23 +84,13 @@
         UIView *aView = otherGestureRecognizer.view;
         if ([aView isKindOfClass:[UIScrollView class]] && [otherGestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
             UIScrollView *sv = (UIScrollView *)aView;
-            CGFloat svWidth = sv.contentSize.width;
-            NSInteger subViewsNum = svWidth/[UIScreen mainScreen].bounds.size.width;
-            
-            UIPanGestureRecognizer *panGest = (UIPanGestureRecognizer *)otherGestureRecognizer;
-            CGPoint translation = [panGest translationInView:self.view];
-            //设置左滑和右滑的情况
-            // 右滑的情况
-            if (translation.x > 0){
-                // 如果是scrollView多视图  类似附近 广场 推荐的滚动
-                if((sv.contentOffset.x==0) && (subViewsNum > 1) ){
-                    return YES;
-                }
-            }else{
-                // tableView的左滑
-                if ((sv.contentOffset.x==0) && (subViewsNum == 1)){
-                    return YES;
-                }
+            // 如果是scrollView多视图  类似附近 广场 推荐的滚动
+            if([sv isKindOfClass:[UITableView class]]){
+                return NO;
+            }
+            // 如果是scrollView多视图  类似附近 广场 推荐的滚动
+            if(sv.contentOffset.x==0){
+                return YES;
             }
         }
     }
@@ -117,7 +107,7 @@
     UINavigationController *nav= appdelegate.tabBarViewController.selectedViewController;
     UIViewController * currentVC = nav.topViewController;
     UIViewController * presentedVC = rootVC.presentedViewController;
-
+    
     if (self.viewControllers.count == 1)
     {
         return;
@@ -169,7 +159,7 @@
             }];
         }
     }
-
+    
 }
 
 - (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated
