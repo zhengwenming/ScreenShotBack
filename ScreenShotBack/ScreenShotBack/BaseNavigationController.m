@@ -16,9 +16,10 @@
 @implementation BaseNavigationController
 
 
-// 打开边界多少距离才触发pop
-#define DISTANCE_TO_POP 80
-
+// 打开边界后，放开，距离左边多少距离才触发pop
+#define Distance_To_Pop 80
+//左边多少距离能接受手势(默认是全屏都可以接受手势)
+#define Left_Distance_Recieve_Gesture (([UIScreen mainScreen].bounds.size.width))
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -91,7 +92,6 @@
         }
         return NO;
     }
-    
     return YES;
 }
 #if kUseScreenShotGesture
@@ -135,7 +135,7 @@
             currentVC.gestureEndedBlock(currentVC);
         }
         CGPoint point_inView = [panGesture translationInView:self.view];
-        if (point_inView.x >= DISTANCE_TO_POP)
+        if (point_inView.x >= Distance_To_Pop)
         {
             [UIView animateWithDuration:0.3 animations:^{
                 rootVC.view.transform = CGAffineTransformMakeTranslation(([UIScreen mainScreen].bounds.size.width), 0);
@@ -159,7 +159,20 @@
     }
 
 }
+//手势代理
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    BaseViewController *topView = (BaseViewController *)self.topViewController;
 
+    if (topView.enablePanGesture == NO)     return NO;
+    if (self.viewControllers.count <= 1)    return NO;
+    if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
+        CGPoint point = [touch locationInView:gestureRecognizer.view];
+        if (point.x < Left_Distance_Recieve_Gesture) {//设置手势触发区
+            return YES;
+        }
+    }
+    return NO;
+}
 - (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     NSArray *arr = [super popToViewController:viewController animated:animated];
