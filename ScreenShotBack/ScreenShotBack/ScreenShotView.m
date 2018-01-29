@@ -63,8 +63,8 @@ static char szListenTabbarViewMove[] = "listenTabViewMove";
 {
     if (pt.x > 0)
     {
-        _maskView.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:-pt.x / 320.0 * 0.4 + 0.4];
-        _imgView.transform = CGAffineTransformMakeScale(0.95 + (pt.x / 320.0 * 0.05), 0.95 + (pt.x / 320.0 * 0.05));
+        _maskView.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:-pt.x / ([UIScreen mainScreen].bounds.size.width) * 0.4 + 0.4];
+        _imgView.transform = CGAffineTransformMakeScale(0.95 + (pt.x / ([UIScreen mainScreen].bounds.size.width) * 0.05), 0.95 + (pt.x / ([UIScreen mainScreen].bounds.size.width) * 0.05));
     }
 }
 
