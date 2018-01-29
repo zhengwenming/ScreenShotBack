@@ -21,8 +21,12 @@
      @implementation BaseNavigationController
 
     这里可以改变触发的距离值
-    // 打开边界多少距离才触发pop
-    #define DISTANCE_TO_POP 80
+    // 打开边界后，放开，距离左边多少距离才触发pop
+    #define Distance_To_Pop 80
+    //左边多少距离能接受手势(默认是全屏都可以接受手势)
+    #define Left_Distance_Recieve_Gesture (([UIScreen mainScreen].bounds.size.width))
+
+
 ```
 
 
