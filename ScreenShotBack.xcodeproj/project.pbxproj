@@ -285,7 +285,7 @@
 				TargetAttributes = {
 					70069F361CE1A51A00992EC5 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = D3BC94Z68N;
+						DevelopmentTeam = S5EH29NEDH;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -413,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -450,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -461,7 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D3BC94Z68N;
+				DEVELOPMENT_TEAM = S5EH29NEDH;
 				GCC_PREFIX_HEADER = ScreenShotBack/ScreenShotBack.pch;
 				INFOPLIST_FILE = ScreenShotBack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -475,7 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D3BC94Z68N;
+				DEVELOPMENT_TEAM = S5EH29NEDH;
 				GCC_PREFIX_HEADER = ScreenShotBack/ScreenShotBack.pch;
 				INFOPLIST_FILE = ScreenShotBack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

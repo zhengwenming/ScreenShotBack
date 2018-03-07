@@ -18,10 +18,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor magentaColor];
 
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Test" style:UIBarButtonItemStyleDone target:self action:nil];
 }
 
 /*
