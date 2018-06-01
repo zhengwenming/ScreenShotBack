@@ -15,12 +15,14 @@
 @implementation WithoutPanGestureViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+
     /**
      关闭手势返回
      */
     self.navigationItem.title = @"关闭手势";
-    self.enablePanGesture = NO;
     
     
     UILabel *aLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 50)];
@@ -39,9 +41,7 @@
 #pragma mark tapTheLabel
 -(void)tapTheLabel:(UITapGestureRecognizer *)sender{
     WithoutPanGestureViewController *nonPanGesVC = [[WithoutPanGestureViewController alloc]init];
-    
     [self.navigationController pushViewController:nonPanGesVC animated:YES];
-    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

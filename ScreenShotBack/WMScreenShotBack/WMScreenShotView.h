@@ -1,14 +1,16 @@
 //
-//  ScreenShotView.h
+//  WMScreenShotView.h
 //  ScreenShotBack
 //
-//  Created by 郑文明 on 16/5/10.
-//  Copyright © 2016年 郑文明. All rights reserved.
+//  Created by zhengwenming on 2018/6/1.
+//  Copyright © 2018年 郑文明. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ScreenShotView : UIView
+@interface WMScreenShotView : UIView
+
+
 @property (nonatomic, strong) UIImageView *imgView;
 @property (nonatomic, strong) UIView *maskView;
 @property (nonatomic, strong) NSMutableArray *arrayImage;
@@ -16,4 +18,5 @@
 - (void)showEffectChange:(CGPoint)pt;
 - (void)restore;
 - (void)screenShot;
+
 @end

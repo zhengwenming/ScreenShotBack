@@ -22,20 +22,22 @@
     aLabel.text = @"我是推荐，点击push到detailVC";
     aLabel.center = self.view.center;
     aLabel.backgroundColor = [UIColor magentaColor];
-    aLabel.textAlignment =NSTextAlignmentCenter;
+    aLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:aLabel];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showDetailViewController:)];
     aLabel.userInteractionEnabled = YES;
     [aLabel addGestureRecognizer:tap];
 }
 -(void)showDetailViewController:(UITapGestureRecognizer *)sender{
-    [self.navigationController pushViewController:[DetailViewController new] animated:YES];
+//    [self.navigationController pushViewController:[DetailViewController new] animated:YES];
+    [self presentViewController:[DetailViewController new] animated:YES completion:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
 -(void)dealloc{
     NSLog(@"%s dealloc",object_getClassName(self));
 }

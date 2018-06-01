@@ -12,9 +12,8 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface ContainerViewController : BaseViewController
+@interface ContainerViewController : UIViewController
 /**
  *  控制跳转到某个tab的参数，默认为0，就是第一个tab
  */

@@ -12,7 +12,7 @@
 #import "ColumnViewController.h"
 #import "OnlineViewController.h"
 #import "MineViewController.h"
-#import "BaseNavigationController.h"
+#import "WMNavigationController.h"
 @interface TabBarViewController ()
 
 @end
@@ -35,7 +35,7 @@
     [recommendVC.tabBarItem setTitle:@"推荐"];
     [recommendVC.tabBarItem setImage:[UIImage imageNamed:@"推荐未选中"]];
     [recommendVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"推荐选中"]];
-    BaseNavigationController *recommendNavC = [[BaseNavigationController alloc] initWithRootViewController:recommendVC];
+    WMNavigationController *recommendNavC = [[WMNavigationController alloc] initWithRootViewController:recommendVC];
     [childVCArray addObject:recommendNavC];
     
     ColumnViewController *columnVC = [[ColumnViewController alloc] init];
@@ -43,7 +43,7 @@
     [columnVC.tabBarItem setTitle:@"栏目"];
     [columnVC.tabBarItem setImage:[UIImage imageNamed:@"栏目未选中"]];
     [columnVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"栏目选中"]];
-    BaseNavigationController *columnNavC = [[BaseNavigationController alloc] initWithRootViewController:columnVC];
+    WMNavigationController *columnNavC = [[WMNavigationController alloc] initWithRootViewController:columnVC];
     [childVCArray addObject:columnNavC];
     
     OnlineViewController *onlineVC = [[OnlineViewController alloc] init];
@@ -51,7 +51,7 @@
     [onlineVC.tabBarItem setTitle:@"直播"];
     [onlineVC.tabBarItem setImage:[UIImage imageNamed:@"直播未选中"]];
     [onlineVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"直播选中"]];
-    BaseNavigationController *onlineNavC = [[BaseNavigationController alloc] initWithRootViewController:onlineVC];
+    WMNavigationController *onlineNavC = [[WMNavigationController alloc] initWithRootViewController:onlineVC];
     [childVCArray addObject:onlineNavC];
     
     MineViewController *mineVC = [[MineViewController alloc] init];
@@ -59,7 +59,7 @@
     [mineVC.tabBarItem setTitle:@"我的"];
     [mineVC.tabBarItem setImage:[UIImage imageNamed:@"我的未选中"]];
     [mineVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"我的选中"]];
-    BaseNavigationController *mineNavC = [[BaseNavigationController alloc] initWithRootViewController:mineVC];
+    WMNavigationController *mineNavC = [[WMNavigationController alloc] initWithRootViewController:mineVC];
     [childVCArray addObject:mineNavC];
     
     self.viewControllers = childVCArray;

@@ -51,7 +51,6 @@
     }
     NSDictionary * dic = dataSource[indexPath.section];
     NSArray *valuesArray = dic.allValues.firstObject;
-
     cell.textLabel.text = valuesArray[indexPath.row];
     return cell;
 }
@@ -59,14 +58,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section==0) {
         if (indexPath.row==0) {
-             [self.navigationController pushViewController:[[WithoutPanGestureViewController alloc] init] animated:YES];
+            WithoutPanGestureViewController *withoutPanGes = [[WithoutPanGestureViewController alloc] init];
+            withoutPanGes.disablePanGesture = YES;
+            [self.navigationController pushViewController:withoutPanGes animated:YES];
         }else{
             [self.navigationController pushViewController:[[PanGestureViewController alloc]init] animated:YES];
         }
     }else if (indexPath.section==1){
         if (indexPath.row==0) {
-         WithoutNavigationBarViewController *withoutNav =    [[WithoutNavigationBarViewController alloc] init];
-            withoutNav.enablePanGesture = NO;
+            WithoutNavigationBarViewController *withoutNav =    [[WithoutNavigationBarViewController alloc] init];
+            withoutNav.disablePanGesture = YES;
             [self.navigationController pushViewController:withoutNav animated:YES];
         }else{
             [self.navigationController pushViewController:[[WithoutNavigationBarViewController alloc] init] animated:YES];

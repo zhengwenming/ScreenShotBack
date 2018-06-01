@@ -13,10 +13,14 @@ static char GestureChangedBlockKey;
 static char GestureEndedBlockKey;
 
 @implementation UIViewController (GestureStateBlock)
-
+-(BOOL)disablePanGesture{
+    return [objc_getAssociatedObject(self, _cmd) boolValue];
+}
+-(void)setDisablePanGesture:(BOOL)disablePanGesture{
+    objc_setAssociatedObject(self, @selector(disablePanGesture), @(disablePanGesture), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 -(void)setGestureBeganBlock:(GestureBeganBlock)gestureBeganBlock{
     objc_setAssociatedObject(self, &GestureBeganBlockKey, gestureBeganBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
-
 }
 -(GestureBeganBlock)gestureBeganBlock{
    return objc_getAssociatedObject(self, &GestureBeganBlockKey);

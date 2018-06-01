@@ -6,8 +6,7 @@
 //  Copyright © 2017年 郑文明. All rights reserved.
 //
 
-#import "BaseViewController.h"
 
-@interface WithoutPanGestureViewController : BaseViewController
+@interface WithoutPanGestureViewController : UIViewController
 
 @end

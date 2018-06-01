@@ -12,8 +12,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface DetailViewController : BaseViewController
+@interface DetailViewController : UIViewController
 
 @end

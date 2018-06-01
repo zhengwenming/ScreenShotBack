@@ -14,7 +14,10 @@
 		70069F4A1CE1A51B00992EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70069F481CE1A51B00992EC5 /* LaunchScreen.storyboard */; };
 		702407631D0BF0FB00A43A93 /* UserGuiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */; };
 		7078A0781CE2C8070031AC4A /* ScreenShotPop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */; };
-		70B3301A1F1FA517006395D6 /* UIViewController+GestureStateBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B330191F1FA517006395D6 /* UIViewController+GestureStateBlock.m */; };
+		70ABC20420C0DEDD00D9E362 /* UIViewController+GestureStateBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ABC1FC20C0DEDD00D9E362 /* UIViewController+GestureStateBlock.m */; };
+		70ABC20820C0DF6C00D9E362 /* WMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ABC20720C0DF6C00D9E362 /* WMNavigationController.m */; };
+		70ABC20E20C10CE400D9E362 /* WMScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ABC20D20C10CE400D9E362 /* WMScreenShotView.m */; };
+		70ABC21420C1285100D9E362 /* UINavigationController+WMPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ABC21320C1285100D9E362 /* UINavigationController+WMPop.m */; };
 		BF57BAEA1E287B420053FA4C /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAE91E287B420053FA4C /* TabBarViewController.m */; };
 		BF57BAF31E287BAD0053FA4C /* PanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAF01E287BAD0053FA4C /* PanGestureViewController.m */; };
 		BF57BB001E287C550053FA4C /* ColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BAF61E287C550053FA4C /* ColumnViewController.m */; };
@@ -29,9 +32,6 @@
 		BF57BB1A1E2880FE0053FA4C /* NearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB151E2880FE0053FA4C /* NearbyViewController.m */; };
 		BF57BB1C1E2880FE0053FA4C /* SquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB191E2880FE0053FA4C /* SquareViewController.m */; };
 		BF57BB1F1E28849D0053FA4C /* RecommendmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF57BB1E1E28849D0053FA4C /* RecommendmeViewController.m */; };
-		BF7FD0361DC832D4000CC513 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7FD0301DC832D4000CC513 /* BaseNavigationController.m */; };
-		BF7FD0371DC832D4000CC513 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7FD0321DC832D4000CC513 /* BaseViewController.m */; };
-		BF7FD0381DC832D4000CC513 /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7FD0351DC832D4000CC513 /* ScreenShotView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +47,15 @@
 		702407611D0BF0FB00A43A93 /* UserGuiderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGuiderViewController.h; sourceTree = "<group>"; };
 		702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGuiderViewController.m; sourceTree = "<group>"; };
 		7078A0771CE2C8070031AC4A /* ScreenShotPop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenShotPop.gif; sourceTree = "<group>"; };
-		70B330181F1FA517006395D6 /* UIViewController+GestureStateBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GestureStateBlock.h"; sourceTree = "<group>"; };
-		70B330191F1FA517006395D6 /* UIViewController+GestureStateBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GestureStateBlock.m"; sourceTree = "<group>"; };
+		70ABC1FC20C0DEDD00D9E362 /* UIViewController+GestureStateBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GestureStateBlock.m"; sourceTree = "<group>"; };
+		70ABC1FE20C0DEDD00D9E362 /* ScreenShotBackConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotBackConfig.h; sourceTree = "<group>"; };
+		70ABC20120C0DEDD00D9E362 /* UIViewController+GestureStateBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GestureStateBlock.h"; sourceTree = "<group>"; };
+		70ABC20620C0DF6C00D9E362 /* WMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMNavigationController.h; sourceTree = "<group>"; };
+		70ABC20720C0DF6C00D9E362 /* WMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMNavigationController.m; sourceTree = "<group>"; };
+		70ABC20C20C10CE400D9E362 /* WMScreenShotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMScreenShotView.h; sourceTree = "<group>"; };
+		70ABC20D20C10CE400D9E362 /* WMScreenShotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMScreenShotView.m; sourceTree = "<group>"; };
+		70ABC21220C1285100D9E362 /* UINavigationController+WMPop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WMPop.h"; sourceTree = "<group>"; };
+		70ABC21320C1285100D9E362 /* UINavigationController+WMPop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WMPop.m"; sourceTree = "<group>"; };
 		BF57BAE81E287B420053FA4C /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		BF57BAE91E287B420053FA4C /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		BF57BAEF1E287BAD0053FA4C /* PanGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureViewController.h; sourceTree = "<group>"; };
@@ -76,13 +83,6 @@
 		BF57BB191E2880FE0053FA4C /* SquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareViewController.m; sourceTree = "<group>"; };
 		BF57BB1D1E28849D0053FA4C /* RecommendmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendmeViewController.h; sourceTree = "<group>"; };
 		BF57BB1E1E28849D0053FA4C /* RecommendmeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendmeViewController.m; sourceTree = "<group>"; };
-		BF7FD02F1DC832D4000CC513 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
-		BF7FD0301DC832D4000CC513 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		BF7FD0311DC832D4000CC513 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		BF7FD0321DC832D4000CC513 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		BF7FD0331DC832D4000CC513 /* ScreenShotBackConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotBackConfig.h; sourceTree = "<group>"; };
-		BF7FD0341DC832D4000CC513 /* ScreenShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotView.h; sourceTree = "<group>"; };
-		BF7FD0351DC832D4000CC513 /* ScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +115,10 @@
 		70069F391CE1A51A00992EC5 /* ScreenShotBack */ = {
 			isa = PBXGroup;
 			children = (
+				70ABC1F820C0DEDD00D9E362 /* WMScreenShotBack */,
 				70069F3D1CE1A51A00992EC5 /* AppDelegate.h */,
 				70069F3E1CE1A51A00992EC5 /* AppDelegate.m */,
 				70069F5F1CE1ACB300992EC5 /* ViewController */,
-				BF7FD02E1DC832D4000CC513 /* ScreenShotBack */,
 				70069F431CE1A51B00992EC5 /* Main.storyboard */,
 				70069F461CE1A51B00992EC5 /* Assets.xcassets */,
 				70069F481CE1A51B00992EC5 /* LaunchScreen.storyboard */,
@@ -141,10 +141,10 @@
 		70069F5F1CE1ACB300992EC5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BF57BB061E287D0B0053FA4C /* WithoutNavigationBarViewController.h */,
-				BF57BB071E287D0B0053FA4C /* WithoutNavigationBarViewController.m */,
 				BF57BB091E287D4A0053FA4C /* WithoutPanGestureViewController.h */,
 				BF57BB0A1E287D4A0053FA4C /* WithoutPanGestureViewController.m */,
+				BF57BB061E287D0B0053FA4C /* WithoutNavigationBarViewController.h */,
+				BF57BB071E287D0B0053FA4C /* WithoutNavigationBarViewController.m */,
 				BF57BAEF1E287BAD0053FA4C /* PanGestureViewController.h */,
 				BF57BAF01E287BAD0053FA4C /* PanGestureViewController.m */,
 				BF57BAE71E287B420053FA4C /* UITabbarController */,
@@ -164,6 +164,22 @@
 				702407621D0BF0FB00A43A93 /* UserGuiderViewController.m */,
 			);
 			path = UserGuiderViewController;
+			sourceTree = "<group>";
+		};
+		70ABC1F820C0DEDD00D9E362 /* WMScreenShotBack */ = {
+			isa = PBXGroup;
+			children = (
+				70ABC20620C0DF6C00D9E362 /* WMNavigationController.h */,
+				70ABC20720C0DF6C00D9E362 /* WMNavigationController.m */,
+				70ABC20C20C10CE400D9E362 /* WMScreenShotView.h */,
+				70ABC20D20C10CE400D9E362 /* WMScreenShotView.m */,
+				70ABC1FE20C0DEDD00D9E362 /* ScreenShotBackConfig.h */,
+				70ABC20120C0DEDD00D9E362 /* UIViewController+GestureStateBlock.h */,
+				70ABC1FC20C0DEDD00D9E362 /* UIViewController+GestureStateBlock.m */,
+				70ABC21220C1285100D9E362 /* UINavigationController+WMPop.h */,
+				70ABC21320C1285100D9E362 /* UINavigationController+WMPop.m */,
+			);
+			path = WMScreenShotBack;
 			sourceTree = "<group>";
 		};
 		BF57BAE71E287B420053FA4C /* UITabbarController */ = {
@@ -236,22 +252,6 @@
 				BF57BB191E2880FE0053FA4C /* SquareViewController.m */,
 			);
 			path = childrenVC;
-			sourceTree = "<group>";
-		};
-		BF7FD02E1DC832D4000CC513 /* ScreenShotBack */ = {
-			isa = PBXGroup;
-			children = (
-				BF7FD02F1DC832D4000CC513 /* BaseNavigationController.h */,
-				BF7FD0301DC832D4000CC513 /* BaseNavigationController.m */,
-				BF7FD0311DC832D4000CC513 /* BaseViewController.h */,
-				BF7FD0321DC832D4000CC513 /* BaseViewController.m */,
-				70B330181F1FA517006395D6 /* UIViewController+GestureStateBlock.h */,
-				70B330191F1FA517006395D6 /* UIViewController+GestureStateBlock.m */,
-				BF7FD0331DC832D4000CC513 /* ScreenShotBackConfig.h */,
-				BF7FD0341DC832D4000CC513 /* ScreenShotView.h */,
-				BF7FD0351DC832D4000CC513 /* ScreenShotView.m */,
-			);
-			path = ScreenShotBack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,11 +333,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF57BAF31E287BAD0053FA4C /* PanGestureViewController.m in Sources */,
-				BF7FD0381DC832D4000CC513 /* ScreenShotView.m in Sources */,
+				70ABC21420C1285100D9E362 /* UINavigationController+WMPop.m in Sources */,
 				BF57BB081E287D0B0053FA4C /* WithoutNavigationBarViewController.m in Sources */,
 				BF57BB131E2880E50053FA4C /* DetailViewController.m in Sources */,
 				70069F3F1CE1A51A00992EC5 /* AppDelegate.m in Sources */,
+				70ABC20820C0DF6C00D9E362 /* WMNavigationController.m in Sources */,
 				70069F3C1CE1A51A00992EC5 /* main.m in Sources */,
+				70ABC20E20C10CE400D9E362 /* WMScreenShotView.m in Sources */,
 				BF57BB031E287C550053FA4C /* OnlineViewController.m in Sources */,
 				BF57BB1A1E2880FE0053FA4C /* NearbyViewController.m in Sources */,
 				BF57BB1C1E2880FE0053FA4C /* SquareViewController.m in Sources */,
@@ -346,11 +348,9 @@
 				702407631D0BF0FB00A43A93 /* UserGuiderViewController.m in Sources */,
 				BF57BB001E287C550053FA4C /* ColumnViewController.m in Sources */,
 				BF57BAEA1E287B420053FA4C /* TabBarViewController.m in Sources */,
+				70ABC20420C0DEDD00D9E362 /* UIViewController+GestureStateBlock.m in Sources */,
 				BF57BB021E287C550053FA4C /* MineViewController.m in Sources */,
-				BF7FD0361DC832D4000CC513 /* BaseNavigationController.m in Sources */,
 				BF57BB011E287C550053FA4C /* RecommendViewController.m in Sources */,
-				BF7FD0371DC832D4000CC513 /* BaseViewController.m in Sources */,
-				70B3301A1F1FA517006395D6 /* UIViewController+GestureStateBlock.m in Sources */,
 				BF57BB101E2880B60053FA4C /* ContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

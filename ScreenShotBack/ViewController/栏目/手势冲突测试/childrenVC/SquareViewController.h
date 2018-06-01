@@ -12,9 +12,8 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface SquareViewController : BaseViewController
+@interface SquareViewController : UIViewController
 @property (nonatomic , retain) UINavigationController *navigationController;
 
 @end

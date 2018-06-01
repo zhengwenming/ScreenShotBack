@@ -13,9 +13,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BaseViewController.h"
 
-@interface NearbyViewController :BaseViewController
+@interface NearbyViewController :UIViewController
 @property (nonatomic , retain) UINavigationController *navigationController;
 
 @end

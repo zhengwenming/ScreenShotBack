@@ -9,25 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "TabBarViewController.h"
 
-#warning 第一步
-
-#if kUseScreenShotGesture
-#import "ScreenShotView.h"
-#endif
-
-
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) TabBarViewController *tabBarViewController;
-#warning 第二步
-
-#if kUseScreenShotGesture
-@property (nonatomic, strong) ScreenShotView *screenshotView;
-#endif
-
-/// func
-+ (AppDelegate* )shareAppDelegate;
-
+@property (nonatomic, strong) WMScreenShotView *screenshotView;
 @end
 

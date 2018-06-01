@@ -6,9 +6,8 @@
 //  Copyright © 2017年 郑文明. All rights reserved.
 //
 
-#import "BaseViewController.h"
 
-@interface RecommendmeViewController : BaseViewController
+@interface RecommendmeViewController : UIViewController
 @property (nonatomic , retain) UINavigationController *navigationController;
 
 @end

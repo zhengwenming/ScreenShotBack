@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+
     /**
      默认支持手势返回
      */
@@ -46,7 +48,6 @@
     self.gestureEndedBlock = ^(UIViewController *viewController) {
         NSLog(@"gestureEndedBlock");
     };
-    
     
 }
 -(void)tapTheLabel:(UITapGestureRecognizer *)sender{

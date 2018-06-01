@@ -16,5 +16,6 @@ typedef void(^GestureEndedBlock)    (UIViewController *viewController);
 @property(nonatomic,copy)GestureBeganBlock      gestureBeganBlock;
 @property(nonatomic,copy)GestureChangedBlock    gestureChangedBlock;
 @property(nonatomic,copy)GestureEndedBlock      gestureEndedBlock;
+@property(nonatomic,assign)BOOL      disablePanGesture;
 
 @end

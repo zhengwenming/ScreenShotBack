@@ -6,8 +6,7 @@
 //  Copyright © 2016年 郑文明. All rights reserved.
 //
 
-#import "BaseViewController.h"
 
-@interface RecommendViewController : BaseViewController
+@interface RecommendViewController : UIViewController
 
 @end

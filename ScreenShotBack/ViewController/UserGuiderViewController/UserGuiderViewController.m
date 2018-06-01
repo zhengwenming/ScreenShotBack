@@ -18,8 +18,10 @@
 @implementation UserGuiderViewController
 #pragma mark-Action
 - (void)start:(UIButton  *)button{
-    [AppDelegate shareAppDelegate].tabBarViewController = [[TabBarViewController alloc]init];
-    [self presentViewController:[AppDelegate shareAppDelegate].tabBarViewController animated:YES completion:^{
+    AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+
+    appdelegate.tabBarViewController = [[TabBarViewController alloc]init];
+    [self presentViewController:appdelegate.tabBarViewController animated:YES completion:^{
         
     }];
 }

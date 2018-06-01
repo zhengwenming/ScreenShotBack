@@ -30,10 +30,17 @@
     aLabel.backgroundColor = [UIColor magentaColor];
     aLabel.textAlignment =NSTextAlignmentCenter;
     [self.view addSubview:aLabel];
-
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showDetailViewController:)];
+    aLabel.userInteractionEnabled = YES;
+    [aLabel addGestureRecognizer:tap];
 
 }
+-(void)showDetailViewController:(UITapGestureRecognizer *)sender{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -6,8 +6,7 @@
 //  Copyright © 2017年 郑文明. All rights reserved.
 //
 
-#import "BaseViewController.h"
 
-@interface WithoutNavigationBarViewController : BaseViewController
+@interface WithoutNavigationBarViewController : UIViewController
 
 @end
